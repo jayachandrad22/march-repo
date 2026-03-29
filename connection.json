@@ -1,0 +1,197 @@
+{
+  "managedApiConnections": {
+    "azuretables": {
+      "api": {
+        "id": "/subscriptions/e4965c1a-919f-4ca6-a89f-b100026bb900/providers/Microsoft.Web/locations/westeurope/managedApis/azuretables"
+      },
+      "authentication": {
+        "type": "ManagedServiceIdentity"
+      },
+      "connection": {
+        "id": "/subscriptions/e4965c1a-919f-4ca6-a89f-b100026bb900/resourceGroups/emna-pp-sc-bsi-euwe-001-rgp/providers/Microsoft.Web/connections/azuretables"
+      },
+      "connectionProperties": {
+        "authentication": {
+          "audience": "https://storage.azure.com/",
+          "type": "ManagedServiceIdentity"
+        }
+      },
+      "connectionRuntimeUrl": "https://b10f7087ffec3967.19.common.logic-westeurope.azure-apihub.net/apim/azuretables/3729e3a6bf6e4c22ae96e2910280f9fa"
+    },
+    "azuretables-1": {
+      "api": {
+        "id": "/subscriptions/e4965c1a-919f-4ca6-a89f-b100026bb900/providers/Microsoft.Web/locations/westeurope/managedApis/azuretables"
+      },
+      "authentication": {
+        "type": "ManagedServiceIdentity"
+      },
+      "connection": {
+        "id": "/subscriptions/e4965c1a-919f-4ca6-a89f-b100026bb900/resourceGroups/emna-pp-sc-bsi-euwe-001-rgp/providers/Microsoft.Web/connections/azuretables-1"
+      },
+      "connectionProperties": {
+        "authentication": {
+          "audience": "https://storage.azure.com/",
+          "type": "ManagedServiceIdentity"
+        }
+      },
+      "connectionRuntimeUrl": "https://b10f7087ffec3967.19.common.logic-westeurope.azure-apihub.net/apim/azuretables/afe1819a260a475198bf382382b78b31"
+    },
+    "sap-1": {
+      "api": {
+        "id": "/subscriptions/e4965c1a-919f-4ca6-a89f-b100026bb900/providers/Microsoft.Web/locations/westeurope/managedApis/sap"
+      },
+      "connection": {
+        "id": "/subscriptions/e4965c1a-919f-4ca6-a89f-b100026bb900/resourceGroups/emna-pp-sc-bsi-euwe-001-rgp/providers/Microsoft.Web/connections/sap-8"
+      },
+      "authentication": {
+        "type": "ManagedServiceIdentity"
+      },
+      "connectionRuntimeUrl": "https://b10f7087ffec3967.19.common.logic-westeurope.azure-apihub.net/apim/sap/f859a2f8d7e0470691399897cda540d6"
+    }
+  },
+  "serviceProviderConnections": {
+    "AzureBlob": {
+      "displayName": "emna-nsp-popdf-sc-euwe-001-azureblob-apiconn",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureBlob_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    },
+    "AzureBlob-1": {
+      "displayName": "azureblob-5",
+      "parameterSetName": "ManagedServiceIdentity",
+      "parameterValues": {
+        "authProvider": {
+          "Type": "ManagedServiceIdentity"
+        },
+        "blobStorageEndpoint": "@appsetting('AzureBlob_11_blobStorageEndpoint')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    },
+    "AzureBlob-2": {
+      "displayName": "nsp-popdf-glblppdocflowsta-apicon",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureBlob_12_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    },
+    "azureTables-2": {
+      "displayName": "ctrldvd365rsmseuwesta",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('azureTables_12_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/azureTables"
+      }
+    },
+    "emna-d2c-bsi-sc-euwe-001-azureblob-apiconn": {
+      "displayName": "emna-d2c-bsi-sc-euwe-001-azureblob-apiconn",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureBlob_13_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    },
+    "emna-d2c-sc-euwe-001-azureblob-apiconn": {
+      "displayName": "emna-d2c-sc-euwe-001-azureblob-apiconn",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureBlob_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    },
+    "emna-d2c-sc-euwe-001-azurefilesystem-apiconn": {
+      "displayName": "emna-d2c-sc-euwe-001-azurefilesystem-apiconn",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureFile_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureFile"
+      }
+    },
+    "keyVault": {
+      "displayName": "emna-d2c-sc-euwe-001-keyvault-apiconn",
+      "parameterSetName": "ManagedServiceIdentity",
+      "parameterValues": {
+        "VaultUri": "@appsetting('keyVault_VaultUri')",
+        "authProvider": {
+          "Type": "ManagedServiceIdentity"
+        }
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/keyVault"
+      }
+    },
+    "sap": {
+      "displayName": "emna-e2oint-sc-euwe-001-001-sapsystem-apicon",
+      "parameterValues": {
+        "authenticationType": "Basic",
+        "client": "103",
+        "language": "",
+        "logonType": "MessageServer",
+        "messageServerHost": "E8Asap.nestle.com",
+        "messageServerLogonGroup": "RFC-OTHER",
+        "messageServerPort": "3600",
+        "messageServerSystemId": "E8A",
+        "password": "@appsetting('sap_password')",
+        "userName": "@appsetting('sap_username')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/sap"
+      }
+    },
+    "sap-3": {
+      "displayName": "emna-e2oint-sc-euwe-e1j-001-sapsystem-apicon",
+      "parameterValues": {
+        "authenticationType": "Basic",
+        "client": "001",
+        "language": "",
+        "logonType": "MessageServer",
+        "messageServerHost": "E1Jsap.nestle.com",
+        "messageServerLogonGroup": "RFC-OTHER",
+        "messageServerPort": "3600",
+        "messageServerSystemId": "E1J",
+        "password": "@appsetting('sap_13_password')",
+        "userName": "@appsetting('sap_13_username')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/sap"
+      }
+    },
+    "AzureBlob-3": {
+      "displayName": "imlighttestst",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureBlob_13_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    },
+    "emna-imlight-sc-euwe-001-azureblob-apiconn": {
+      "displayName": "emna-imlight-sc-euwe-001-azureblob-apiconn",
+      "parameterSetName": "connectionString",
+      "parameterValues": {
+        "connectionString": "@appsetting('AzureBlob_12_connectionString')"
+      },
+      "serviceProvider": {
+        "id": "/serviceProviders/AzureBlob"
+      }
+    }
+  },
+  "agentConnections": {}
+}
